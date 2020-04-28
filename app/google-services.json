@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "295528193746",
+    "firebase_url": "https://logindemotest-98523.firebaseio.com",
+    "project_id": "logindemotest-98523",
+    "storage_bucket": "logindemotest-98523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295528193746:android:bedab07a611986d47e570b",
+        "android_client_info": {
+          "package_name": "com.example.login_fcmp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295528193746-pjtu47ths9qosbqg43nbvug2u16dn9o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr1Lf1a6vDA1qYwiaHvZ5s1VYHNJmTSrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295528193746-pjtu47ths9qosbqg43nbvug2u16dn9o8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
