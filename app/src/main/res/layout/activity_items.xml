@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemsActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:completionHint="@android:string/search_go"
+        android:completionThreshold="2"
+        android:dropDownWidth="wrap_content"
+        android:dropDownHeight="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="17dp"
+        android:text="Enter Item below"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/autoCompleteTextView"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginBottom="62dp"
+        android:text="Quantity(in Kg)"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:hint="Type the Required Quantity"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginBottom="228dp"
+        android:text="Add Item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
