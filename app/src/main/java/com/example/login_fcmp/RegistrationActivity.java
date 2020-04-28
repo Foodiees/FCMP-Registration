@@ -28,11 +28,19 @@ public class RegistrationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
-        username=(EditText)findViewById(R.id.usernameEt);
-        useremail=(EditText)findViewById(R.id.Email1Et);
-        regBtn=(Button)findViewById(R.id.RegBtn);
-        userpassword=(EditText)findViewById((R.id.passwordEt));
-        alreadyuser=(TextView)findViewById(R.id.textView3);
+        username = (EditText) findViewById(R.id.usernameEt);
+        useremail = (EditText) findViewById(R.id.Email1Et);
+        regBtn = (Button) findViewById(R.id.RegBtn);
+        userpassword = (EditText) findViewById((R.id.passwordEt));
+        alreadyuser = (TextView) findViewById(R.id.textView3);
+        alreadyuser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
+
+            }
+        });
+
         firebaseAuth=FirebaseAuth.getInstance();
         regBtn.setOnClickListener(new View.OnClickListener() {
             @Override
